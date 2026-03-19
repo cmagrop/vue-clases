@@ -17,8 +17,7 @@ export const dataService =
     //agregar tarea
     async addTask(task) {
         try {
-            return await addDoc
-                (
+            return await addDoc(
                     collection(db, 'tasks'),
                     {
                         ...task,
