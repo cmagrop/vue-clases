@@ -48,7 +48,7 @@ gris , el mas claro posible que es el 5
             {{ product.title }}
         </v-card-title>
         <v-chip size="x-small" color="secondary" class="mt-1" >
-            {{ product.area }}
+            {{ product.categoria }}
         </v-chip>
         
       </v-card-item>
@@ -56,8 +56,8 @@ gris , el mas claro posible que es el 5
       <v-card-text class="flex-grow-1">
         {{ product.description }}
       </v-card-text>
-      <v-divider></v-divider>/*divide el card->linea */
-      /*
+      <v-divider></v-divider><!--divide el card->linea */-->
+      <!--
             v-card-actions es una etiqueta que permite definir
             en un card el conjunto de botones que los acompañarán
             v-btn-> elemento botón
@@ -65,11 +65,11 @@ gris , el mas claro posible que es el 5
             alternar favoritos
             $emit que manda un evento desde el hijo al padre 
  
-      */
+      -->
       <v-card-actions>
         <v-btn
-        :icon="isFavorite?'mdi-heart':'mdi-heart-outline'"
-        :color="isFavorite?'red':'grey'",
+        :icon="isFavorite ? 'mdi-heart' : 'mdi-heart-outline'"
+        :color="isFavorite ? 'red' : 'grey'"
         @click="$emit('toggle-fav',product.id)"
         >
         </v-btn>
@@ -80,7 +80,7 @@ gris , el mas claro posible que es el 5
       tonal significa una variante el color de fondo es 
       levemente opacado por el actual color de texto
       color primary es un azul-->
-      <v-btn  variant="tonal" color="primary">Inscribirme</v-btn>
+      <v-btn  variant="tonal" color="primary">Comprar</v-btn>
 
 
      </v-card>
